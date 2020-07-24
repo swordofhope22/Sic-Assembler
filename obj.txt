@@ -1,0 +1,13 @@
+label	opcode	operand	 location	objectcode
+STRCPY	START	0000	  0000		   -
+FIRST	LDX	ZERO	  0000		    04001e
+MOVECH	LDCH	STR1,X	  0003		    50800f
+-	STCH	STR2,X	  0006		    548013
+-	TIX	ELEVEN	  0009		    2c0021
+-	JLT	MOVECH	  000c		    380003
+STR1	BYTE	C'EOF'	  000f		    454f46
+K	BYTE	X'A1'	  0012		    A1
+STR2	RESB	11	  0013		        -
+ZERO	WORD	0	  001e		    000000
+ELEVEN	WORD	11	  0021		    00000b
+-	END	FIRST	  0024		     -
